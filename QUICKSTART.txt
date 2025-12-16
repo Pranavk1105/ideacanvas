@@ -1,0 +1,70 @@
+╔══════════════════════════════════════════════════════════════╗
+║           🎓 ZEDCANVAS - QUICK REFERENCE CARD               ║
+╚══════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 BEFORE DEPLOYMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. MongoDB Atlas: cloud.mongodb.com (FREE)
+2. JWT Secret: node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+3. Update backend/.env with both values
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 DEPLOYMENT COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+git init
+git add .
+git commit -m "Ready for deployment"
+git remote add origin https://github.com/YOUR_USERNAME/zedcanvas.git
+git push -u origin main
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 HOSTING SERVICES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Backend:  https://render.com (FREE, no credit card)
+Frontend: https://vercel.com (FREE)
+Database: MongoDB Atlas (FREE M0 tier)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚙️ ENVIRONMENT VARIABLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Backend (Render):
+  NODE_ENV=production
+  MONGO_URI=<your-atlas-string>
+  JWT_SECRET=<64-char-secret>
+  BACKEND_PORT=4000
+  FRONTEND_URL=<your-vercel-url>
+
+Frontend (Vercel):
+  VITE_API_URL=<your-render-url>
+  VITE_SOCKET_URL=<your-render-url>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 GUIDES AVAILABLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SIMPLE_DEPLOY.md      → Start here! (5 min read)
+DEPLOYMENT_GUIDE.md   → Detailed reference
+README.md             → Project overview
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ TESTING CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+□ Backend health check works
+□ Can register new user
+□ Can login
+□ Can create board
+□ Drawing works
+□ Real-time collaboration works
+□ Clear board works
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏱️ TOTAL TIME: 20 minutes
+💰 TOTAL COST: $0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
